@@ -1,0 +1,15 @@
+TeacherBook
+
+
+This application allows teachers to log into a system and create, update, or
+delete the email addresses of their students' parents.  Only logged in users
+will be able to move beyond the login page.
+The validity of the email address is checked against a regex.  This app uses the
+gem 'bcrypt' to turn a user's password into a hashed password.  To check if
+a password is correct, the bcrypt algorithm is applied to the password and the
+result is compared to the hashed password.  Thus, the user's password is
+never stored in a database.
+
+When logged in, a teacher will be able to manage their list of parents
+(but not any other teachers' parents), and change their own passwords. Teachers
+cannot see other teachers' parents.
