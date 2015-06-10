@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'sessions_controller/login'
 
   get 'sessions_controller/logout'
+  
+
 
   resources :parents
   resources :teachers

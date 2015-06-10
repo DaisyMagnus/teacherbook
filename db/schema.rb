@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609212953) do
+ActiveRecord::Schema.define(version: 20150610003045) do
 
   create_table "parents", force: :cascade do |t|
     t.string   "student_name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150609212953) do
     t.string   "parent_email"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "teacher_id"
   end
 
   create_table "teachers", force: :cascade do |t|
