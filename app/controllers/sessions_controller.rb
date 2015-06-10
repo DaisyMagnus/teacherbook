@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :logged_in?, only [:index]
+  before_action :logged_in?, only: [:login, :logout]
 
   def logged_in?
     
@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
   def login
 
   end
+
 
 
   def logout

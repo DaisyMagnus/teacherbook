@@ -1,5 +1,6 @@
 class ParentsController < ApplicationController
   before_action :set_parent, only: [:show, :edit, :update, :destroy]
+  
 
   # GET /parents
   # GET /parents.json
@@ -19,6 +20,7 @@ class ParentsController < ApplicationController
 
   # GET /parents/1/edit
   def edit
+
   end
 
   # POST /parents
@@ -69,6 +71,6 @@ class ParentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def parent_params
-      params.require(:parent).permit(:student_name, :parent_name, :parent_email)
+      params.require(:parent).permit(:student_name, :parent_name, :parent_email, :teacher_id)
     end
 end
